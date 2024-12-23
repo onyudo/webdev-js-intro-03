@@ -1,0 +1,20 @@
+1. Explain why a number data type added to a string data type returns a string.
+
+When confronted with a number being added to a string, JavaScript will perform string concatentation on the values and not mathematical addition.
+For example (1 + "1") will return the string 11 while (1 + 1) will return the number 2.
+
+2. Name a scenario where using the == operator could cause a bug.
+
+In JavaScript, the == operator (sometimes called the loose equality operator) can sometimes cause bugs due to its type coercion behavior.
+When using ==, JavaScript will attempt to convert the operands to the same type before comparing them, which can lead to unexpected results.
+An example would be 0 == false which JavaScript would say is true even though 0 is a number and false is a boolean value.
+
+3. Name the operator(s) that you find confusing and explain why.
+
+Modulus. I have never encountered anything like it nor used anything like it. Some of its behaviors confuse me (see my experiments)
+and even though I researched the reasons behind them I don't feel like I have a good feel for the operator yet.
+
+4. Explain a situation where you would use the Modulus operator and why.
+
+I took a deeper dive into the Modulus operator in my experiments in the index.js file.
+Using the modulus to determine if a number is even or odd could be handy.
